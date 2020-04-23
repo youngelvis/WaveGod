@@ -1,15 +1,14 @@
-
 SELECT *
 FROM Picture;
 
-select *
-from Fan;
+SELECT *
+FROM Fan;
 
-select *
-from Album;
+SELECT *
+FROM Album;
 
-select *
-from Track;
+SELECT *
+FROM Track;
 
-select *
-from Merchandise;
+SELECT *
+FROM Merchandise;

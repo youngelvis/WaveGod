@@ -1,15 +1,13 @@
-insert into `Picture`(
-    
+INSERT INTO `Picture`(
     photo,
     dateOfCreation
 )
-values(
-    
+VALUES(
     'picture',
     '2008-11-11 13:23:44'
 );
-insert into `Fan`(
-   
+
+INSERT INTO `Fan`(
     firstname,
     surname,
     username,
@@ -22,10 +20,8 @@ insert into `Fan`(
     dateOfBirth,
     dateOfCreation,
     photoID
-   
 )
-values(
-    
+VALUES(
     'elvis',
     'mokogwu',
     'tha_elvis',
@@ -40,24 +36,20 @@ values(
     '1'
 );
 
-insert into `Album`(
-    
+INSERT INTO `Album`(
     albumName,
     dateOfCreation,
     isMixtape,
     photoID
-   
 )
-values(
-    
+VALUES(
     'yaya',
     '2008-11-11 13:23:44',
     False,
     '1'
 );
 
-insert into `Track`(
-   
+INSERT INTO `Track`(
     trackName,
     lenthOfSong,
     genre,
@@ -66,7 +58,7 @@ insert into `Track`(
     dateOfCreation,
     albumId 
 )
-values(
+VALUES(
     'power',
     '03:22',
     'afro',
@@ -76,13 +68,13 @@ values(
     '1'
 );
 
-insert into `Merchandise`(
+INSERT INTO `Merchandise`(
     merchName,
     price,
     quantity,
     description
 )
-values(
+VALUES(
     'shirt',
     '10.56',
     '10',

@@ -7,14 +7,14 @@ CREATE DATABASE IF NOT EXISTS wavegod
     DEFAULT COLLATE utf8mb4_unicode_ci;
 USE wavegod;
 
-create Table `Picture`(
+CREATE TABLE `Picture`(
     photoID int NOT NULL AUTO_INCREMENT,
     photo varchar(40),
     dateOfCreation datetime,
     PRIMARY KEY (photoID)
 );
 
-create table `Fan` (
+CREATE TABLE `Fan` (
     fanID int NOT NULL AUTO_INCREMENT,
     firstname varchar(40) NOT NULL,
     surname varchar(40) NOT NULL,
@@ -32,7 +32,7 @@ create table `Fan` (
     FOREIGN KEY (photoID) REFERENCES Picture(photoID)
 );
 
-create Table `Album`(
+CREATE TABLE `Album`(
     albumID  int NOT NULL AUTO_INCREMENT, 
     albumName  varchar(40) NOT NULL,
     photoID int NOT NULL,
@@ -42,7 +42,7 @@ create Table `Album`(
     FOREIGN KEY (photoID) REFERENCES Picture (photoID)
 );
 
-create Table `Track`(
+CREATE TABLE `Track`(
     trackID  int NOT NULL AUTO_INCREMENT,
     trackName  varchar(40) NOT NULL,
     lenthOfSong time NOT NULL,
@@ -55,7 +55,7 @@ create Table `Track`(
     FOREIGN KEY (albumID) REFERENCES Album (albumID)
 );
 
-create Table `Merchandise`(
+CREATE TABLE `Merchandise`(
     Mechid int NOT NULL AUTO_INCREMENT,
     merchName VARCHAR(40) NOT NULL,
     price FLOAT NOT NULL,
